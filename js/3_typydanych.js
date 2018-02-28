@@ -81,7 +81,7 @@ var suma = wiek1 + wiek2 + wiek3;
 var sredniWiek = suma / 3;
 sredniWiek = sredniWiek.toFixed(2);
 document.write(wiek1 + ' + ' + wiek2 + ' + ' + wiek3 + ' = ' + suma);
-document.write('<br>Sredni wiek wynosi ' + sredniWiek);
+document.write('<br>Sredni wiek wynosi ' + sredniWiek + ' lat');
 
 
 
