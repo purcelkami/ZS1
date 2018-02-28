@@ -53,17 +53,32 @@ console.log('Twój wiek: ' + wiek1 + ' lat');
 console.log(typeof(wiek1)); //string
 
 var wiek2 = prompt('Podaj wiek');
+//var suma = wiek1 + wiek2;
+//document.write(wiek1 + ' + ' + wiek2 + ' = ' + suma);
+
+
+//rzutowanie typów danych na liczbe
+
+var wiek3 = Number(prompt('podaj wiek'));
+
+//zamiana na liaczbe całkowitą
+
+
+//ctrl+shift+/
+
+/*wiek1 = parseInt(wiek1);
+wiek2 = parseInt(wiek2);
+
 var suma = wiek1 + wiek2;
-document.write(wiek1 + ' + ' + wiek2 + ' = ' + suma);
+document.write(wiek1 + ' + ' + wiek2 + ' = ' + suma);*/
 
+//zamiana typu danych na zmiennoprzecinkowy
 
+wiek1 = parseFloat(wiek1);
+wiek2 = parseFloat(wiek2);
 
-
-
-
-
-
-
+var suma = wiek1 + wiek2 + wiek3;
+document.write(wiek1 + ' + ' + wiek2 + ' + ' + wiek3 + ' = ' + suma);
 
 
 
