@@ -25,9 +25,10 @@ x=10;
 y=7;
 var suma = x + y ;
 //alert("suma wynosi: " +suma);
-var ruznica =x - y;
+var ruznica = x - y;
 var dzielenie;
 dzielenie = x / y;
-mnozenie = x % y;
+mnozenie = x * y;
 modulo = x % y;
+
 console.log(modulo);
