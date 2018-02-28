@@ -43,15 +43,18 @@ console.log(typeof(tablica));
 
 
 //############################################################
-
+//ctrl + kliknięcie zaznaczasz w wielu miejscach
 
 //var liczba = prompt('podaj liczbe');
 
-var wiek = prompt('podaj wiek', 'np. 18');
-console.log(wiek);
 
+var wiek1 = prompt('podaj wiek', 'np. 18');
+console.log('Twój wiek: ' + wiek1 + ' lat');
+console.log(typeof(wiek1)); //string
 
-
+var wiek2 = prompt('Podaj wiek');
+var suma = wiek1 + wiek2;
+document.write(wiek1 + ' + ' + wiek2 + ' = ' + suma);
 
 
 
