@@ -1,0 +1,38 @@
+<!--! + Tab-->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Systemy Liczbowe</title>
+</head>
+<body>
+<!--<h3>Systemy liczbowe</h3>-->
+<div id="wynik">Treść</div>
+<div id="wynik1"></div>
+<script>
+    var elWynik = document.getElementById('wynik'); //document.getElementById() zapisuje sie w pojemniku
+    var elWynik1 = document.getElementById('wynik1');
+    document.write("<h3>Systemy liczbowe</h3>");
+    var dziesietna = 50;
+    var oktalna = 0o21; //0o żeby mieć liczbe oktalną
+    var hex = 0xf; //0x żeby mieć liczbe hexalną
+    document.write('(f)<sub>16</sub> = (' + hex + ') <sub>10</sub>');
+
+    elWynik.style.color = '#961010'; //ctrl + e zmiana koloru
+    elWynik.innerHTML = '(21)<sub>8</sub> = (' + oktalna + ') <sub>10</sub>'; //sub indeks dolny //sup indeks górny
+
+    //zad 1
+//Użytkownik z klawiatury podaje liczbę w systemie szesnastkowym, wyświetl na ekranie liczbę w systemie dziesiętnym
+
+    var szesnastkowa = prompt('Podaj liczbe w systemie szesnastkowym');
+    szesnastkowa1 = '0x' + szesnastkowa;
+    szesnastkowa1 = Number(szesnastkowa1);
+
+    elWynik1.style.color = "green";
+    elWynik1.innerHTML = '(' + szesnastkowa + ')<sub>16</sub> = (' + szesnastkowa1 + ') <sub>10</sub>';
+
+    console.log(typeof(hex));
+    console.log(typeof(szesnastkowa)); //f12 konsola w chrome
+    </script>
+</body>
+</html>
