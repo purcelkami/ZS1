@@ -9,9 +9,11 @@
 <!--<h3>Systemy liczbowe</h3>-->
 <div id="wynik">Treść</div>
 <div id="wynik1"></div>
+<div id="wynik2"></div>
 <script>
     var elWynik = document.getElementById('wynik'); //document.getElementById() zapisuje sie w pojemniku
     var elWynik1 = document.getElementById('wynik1');
+    var elWynik2 = document.getElementById('wynik2');
     document.write("<h3>Systemy liczbowe</h3>");
     var dziesietna = 50;
     var oktalna = 0o21; //0o żeby mieć liczbe oktalną
@@ -24,7 +26,7 @@
     //zad 1
 //Użytkownik z klawiatury podaje liczbę w systemie szesnastkowym, wyświetl na ekranie liczbę w systemie dziesiętnym
 
-    var szesnastkowa = prompt('Podaj liczbe w systemie szesnastkowym');
+/* var szesnastkowa = prompt('Podaj liczbe w systemie szesnastkowym');
     szesnastkowa1 = '0x' + szesnastkowa;
     szesnastkowa1 = Number(szesnastkowa1);
 
@@ -32,7 +34,7 @@
     elWynik1.innerHTML = '(' + szesnastkowa + ')<sub>16</sub> = (' + szesnastkowa1 + ') <sub>10</sub>';
 
     console.log(typeof(hex));
-    console.log(typeof(szesnastkowa)); //f12 konsola w chrome
+    console.log(typeof(szesnastkowa)); //f12 konsola w chrome*/
 
 //    #########################################################
 //    konwersja systemy decymalnego na binarny
@@ -42,6 +44,14 @@
 
     //zad dom
 //    Napisz program komwertujący system oktalny na decymalny
+
+    var okta = prompt('Podaj liczbe w systemie oktalnym');
+    okta1 = '0o' + okta;
+    okta1 = Number(okta1);
+
+    elWynik2.style.color = "blue";
+    elWynik2.innerHTML = '(' + okta + ')<sub>8</sub> = (' + okta1 + ') <sub>10</sub>';
+
 
     </script>
 </body>
